@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+    <div class="panel-body"  >
+    <br><br><br>
+    	<div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+        <div class="row"  class="text-center" >
+            <div><h1><b>Welcome to ATM</b></h1></div>
+            <br>
+            <div><b>Swipe your card to login</b></div>
+            <br>
+            <div>OR</div>
+            <br>
+            <div><b>Go Cardless - 
+               <a [routerLink]="['Cardless']">Login</a>
+               </b>
+            </div>
+        </div>
+           <br><br><br>     
+    </div>
+</div>

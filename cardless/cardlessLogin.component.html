@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+   
+    <div class="panel-body"  >
+        <div class="row" >
+            <img src="./app/assets/images/Cardless.jpg" 
+                 class="img-responsive center-block"
+                 style="max-height:300px;padding-bottom:50px"/>
+        </div>
+        <div class="row"  class="text-center" >
+        <div>Login</div>
+            <br>
+             <input class="center" type="password" #atmPin name="atmPin" placeholder="ATM Pin" />
+            <br><br>
+            <input class="center" type="password" #passcode name="passcode" placeholder="Passcode"/>
+            <br><br>
+            <button class='btn btn-primary' (click)='submit( atmPin.value, passcode.value)'>
+                            Submit
+              </button>
+              <br><br>
+              <!-- <div>OR</div>
+              <button class='btn btn-primary' (click)='scan()'>
+                            Scan QR code
+              </button> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+   font-size: x-large;
+}
+
+div.panel-body{
+	background-color: powderblue; 
+}
+   
+h1 {
+    color: white;
+    font-family: Stylus BT;
+}
+
+div.text-style{
+	font-family: Calibri(Body);
+	font-weight: bold;
+	font-size: 150%;
+}   
