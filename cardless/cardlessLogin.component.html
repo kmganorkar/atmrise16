@@ -7,20 +7,22 @@
                  style="max-height:300px;padding-bottom:50px"/>
         </div>
         <div class="row"  class="text-center" >
-        <div>Login</div>
+        <div class="text-style" >Login</div>
             <br>
-             <input class="center" type="password" #atmPin name="atmPin" placeholder="ATM Pin" />
+             <input class="center" type="password" #atmPin name="atmPin" placeholder="ATM Pin" id="atmPin"/>
             <br><br>
-            <input class="center" type="password" #passcode name="passcode" placeholder="Passcode"/>
+            <input class="center" type="password" #passcode name="passcode" placeholder="Passcode" id="passcode"/>
             <br><br>
-            <button class='btn btn-primary' (click)='submit( atmPin.value, passcode.value)'>
+            <button class='btn btn-primary' onclick="doGet()">
                             Submit
               </button>
               <br><br>
-              <!-- <div>OR</div>
-              <button class='btn btn-primary' (click)='scan()'>
-                            Scan QR code
-              </button> -->
+             <img class="center" src="./app/assets/images/images.png" onload="showqrCode()" width="1" height="1"/>
+              <div class="text-style">Or Scan QRCode</div>
+              <br><br>
+              <div align="center" id="qrcodeimg"></div>
+              <br><br>
+              <div align="center" id="successMessage"></div>
         </div>
     </div>
 </div>
